@@ -13,6 +13,44 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+
+    /* new: stack title and nav, center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* new: make the h2 link group a centered row */
+header > div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+header h2 {
+    margin: 5px;                /* remove extra vertical spacing */
+    padding: 0 4px;       /* add space inside each h2 (left/right) */
+    display: inline-block;    /* ensure padding applies consistently */
+}
+
+/* Make header h2 (and h2 links) a whitish color */
+
+header h2 a, h1 a {
+    color: #f7f8fa; /* adjust to taste (#ffffff is pure white) */
+    margin: 0.25rem 0;
+}
+
+header h2 a, h1 a {
+    text-decoration: none;
+}
+header h1 a:hover {
+    color: lightblue;
+}
+header h2 a:hover {
+    color: violet;
+    text-decoration: underline;
 }
 
 h1, h2, h3 {
